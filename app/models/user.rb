@@ -21,4 +21,9 @@ class User < ActiveRecord::Base
   validates_presence_of :postal_code  
   validates_presence_of :bdate
   validates_presence_of :industry
+
+
+  has_attached_file :photo,
+:default_url => '/assets/default1.gif'
+
 end

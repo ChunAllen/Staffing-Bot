@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
 	def profile
 		@addexp = Experience.new
-		@showexp = Experience.find(:all, :select => 'title, company, description', :conditions => {:user_id => current_user.id})
+		@showexp = Experience.find(:all, :select => 'title, company, description, from_month, to_month, from_year, to_year ', :conditions => {:user_id => current_user.id})
 	end
     
    

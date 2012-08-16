@@ -7,6 +7,12 @@ resources :users do
     end
   end
 
+resources :experiences do
+  member do
+  end
+end
+
+
   # match '/hub', :to => "profiles#profile" 
 
   # The priority is based upon order of creation:

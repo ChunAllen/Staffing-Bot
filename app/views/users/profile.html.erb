@@ -1,10 +1,32 @@
+<div id="user_profile">
 
-<h1><%= current_user.fname + " " + current_user.lname%></h1>
-<br/>
+		<div id="user_photo">
+			<%= image_tag current_user.photo.url,:size=>"200x200" %>
+		<div>
 
-  <%= render 'formnew' %>
-  <a  data-toggle="modal" href="#myModal" >Add Work Experience</a>
+		<div id="user_name">
+			<h2><%= current_user.fname + " " + current_user.lname%></h2>
+		</div>	
+</div>
 
-  <%= render 'experiences/viewexp' %>
+
+<div id="right_user_profile">
+
+	<div id="right_content">
+		
+		
+		<%= render 'formnew' %>
+  		<a  data-toggle="modal" href="#myModal" >Add Work Experience</a>
+  		<%= render 'experiences/viewexp' %>
+		
+	
+	</div>
+
+  		
+</div>
+
+
+  
+  
 
  

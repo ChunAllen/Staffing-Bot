@@ -6,7 +6,7 @@
   </div>
   <div class="modal-body">
 
-      <%= simple_form_for @addexp  do |f| %>
+      <%= simple_form_for @addexp , :html => { :class => 'form-horizontal' } do |f| %>
     <fieldset>
 
       <%= f.hidden_field :user_id, :value => current_user.id %>

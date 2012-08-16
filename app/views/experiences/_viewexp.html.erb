@@ -1,18 +1,56 @@
-<div class="yui-gf">	
-							<h2><i>Work Experience</i></h2>
-							
-						<div class="yui-u">
+		<div id="header">
+							<h3>Work Experience</h3>
+		</div>	
+			
+		<div id="wrapper">
 
-							<div class="job">
-								<% @showexp.each do |u| %>
-								
-									<h2><%= u.company%></h2>
-									<h3><%= u.title%></h3>
-									<p><%= u.description%></p>
-								
-								<%end%>
+					<% @showexp.each do |showexp| %>
+						
+							<div id="company">
+			
+							<table >
+								<tr>
+										<td> <br/><%= showexp.company%></td>				
 							</div>
+									
+									<td>
+										<div id="duration">
+											<BR/>
+											<%= showexp.from_month%>
+											<%= showexp.to_month%>
 
-						</div><!--// .yui-u -->
+											<%= showexp.from_year%>
+											<%= showexp.to_year%>
+										</div>
+									</td>		
+							
+								</tr>
+								
+								<tr >
+									<td>
+										<div id="job_title">
+											<BR/>
+											<%= showexp.title%>
+										</div>
+									</td>
+								</tr>	
+							
+								<tr colspan="2">
+									<td colspan="2">
+										<div id="job_desc">
+											<BR/>
+										<p>
+											<%= showexp.description%>
+										</p>
+									</div>
+									</td>
+								</tr>
+							</table>	
 
-</div><!--// .yui-gf -->
+					
+					<%end%>
+						
+	</div>								
+					
+	
+			
