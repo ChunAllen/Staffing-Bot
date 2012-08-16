@@ -1,0 +1,37 @@
+<div class="modal hide" id="myModal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Add Work Experience</h3>
+    
+  </div>
+  <div class="modal-body">
+
+      <%= simple_form_for @addexp  do |f| %>
+    <fieldset>
+
+      <%= f.hidden_field :user_id, :value => current_user.id %>
+      <table>
+        <tr>
+          <td><%= f.input :title %></td>
+        </tr>
+          <tr>
+          <td> <%= f.input :company %></td>
+        </tr>
+        <tr>
+          <td>  <%= f.input :description %></td>
+        </tr>
+      </table>
+      
+      <div class="modal-footer">
+        
+      	 <%= link_to "Cancel", :class => 'btn'%> 
+         <%= f.submit nil, :class => 'btn btn-primary' %>
+              
+      </div>
+   
+     </fieldset>
+
+    <% end %>
+    
+  </div>
+</div>

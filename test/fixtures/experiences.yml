@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  title: MyString
+  company: MyString
+  location: MyString
+  from_month: MyString
+  to_month: MyString
+  from_year: MyString
+  to_year: MyString
+  description: MyString
+
+two:
+  user_id: 1
+  title: MyString
+  company: MyString
+  location: MyString
+  from_month: MyString
+  to_month: MyString
+  from_year: MyString
+  to_year: MyString
+  description: MyString

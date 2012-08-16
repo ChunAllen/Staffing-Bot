@@ -1,0 +1,18 @@
+<div class="yui-gf">	
+							<h2><i>Work Experience</i></h2>
+							
+						<div class="yui-u">
+
+							<div class="job">
+								<% @showexp.each do |u| %>
+								
+									<h2><%= u.company%></h2>
+									<h3><%= u.title%></h3>
+									<p><%= u.description%></p>
+								
+								<%end%>
+							</div>
+
+						</div><!--// .yui-u -->
+
+</div><!--// .yui-gf -->
